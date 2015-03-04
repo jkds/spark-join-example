@@ -20,6 +20,7 @@ Then once in sbt run:
    	> run [hostname/ip of C*]
    
 If you don't specify the parameter for the hostname it will default to 127.0.0.1
+
 Given the correct dataset matching entries will be printed on stdout like this:
 
 	Executive -> Personnel ID = 2, Name = Jonathan Ellis
