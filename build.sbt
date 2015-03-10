@@ -19,6 +19,6 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.datastax.spark"  %%  "spark-cassandra-connector"               % SparkCassandraVersion
+  "com.datastax.spark"  %%  "spark-cassandra-connector" % SparkCassandraVersion
 )
 
