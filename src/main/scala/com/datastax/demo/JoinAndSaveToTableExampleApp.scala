@@ -16,9 +16,9 @@ object JoinAndSaveToTableExampleApp extends App with ArgParser {
   val conf = new SparkConf()
     .setMaster(parsedArgs.getOrElse("sparkmaster","local[2]"))
     .setAppName("join-example")
-    .set("spark.executor.memory","512m")
-    .set("spark.default.parallelism","2")
-    .set("spark.cassandra.connection.host", parsedArgs.getOrElse("cassandrahost","127.0.0.1"))
+    .set("spark.executor.memory", parsedArgs.getOrElse("executor.memory", "512m"))
+    .set("spark.default.parallelism", parsedArgs.getOrElse("processing.cores", "2"))
+    .set("spark.cassandra.connection.host", parsedArgs.getOrElse("cassandrahost", "127.0.0.1"))
 
   val sc = new SparkContext(conf)
 
